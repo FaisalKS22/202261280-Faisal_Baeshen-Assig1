@@ -148,6 +148,10 @@ function Hero({ visitorName, onNamePrompt }) {
           <span className="stat-label">Years Learning</span>
         </div>
         <div className="stat-item">
+          <span className="stat-number">5000+</span>
+          <span className="stat-label">Beneficiaries</span>
+        </div>
+        <div className="stat-item">
           <span className="stat-number">{formatTime(timeOnSite)}</span>
           <span className="stat-label">Time on Site</span>
         </div>

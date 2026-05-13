@@ -25,7 +25,7 @@ const projectsData = [
     alt: 'Kashet App screenshot',
     date: '2025-11-20',
     level: 'Advanced',
-    repo: 'https://github.com/Faisal-M2',
+    repo: null,
     live: null,
   },
   {
