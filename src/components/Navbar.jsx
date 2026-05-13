@@ -9,7 +9,6 @@ function Navbar({ theme, toggleTheme, commandPalette }) {
   const navItems = [
     { href: '#about', label: 'About' },
     { href: '#projects', label: 'Projects' },
-    { href: '#github-repos', label: 'GitHub' },
     { href: '#skills', label: 'Skills' },
     { href: '#fun-fact', label: 'Fun Facts' },
     { href: '#contact', label: 'Contact' },

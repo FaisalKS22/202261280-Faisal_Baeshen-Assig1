@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Projects from './components/Projects'
-import GitHubRepos from './components/GitHubRepos'
 import Skills from './components/Skills'
 import FunFact from './components/FunFact'
 import Contact from './components/Contact'
@@ -65,7 +64,6 @@ function App() {
       <main id="main-content">
         <Hero visitorName={visitorName} onNamePrompt={handleNamePrompt} />
         <Projects />
-        <GitHubRepos />
         <Skills />
         <FunFact />
         <Contact />
