@@ -50,7 +50,7 @@ function Hero({ visitorName, onNamePrompt }) {
   return (
     <header id="about" className="hero">
       {/* Large watermark text behind everything */}
-      <span className="hero-watermark" aria-hidden="true">فيصل باعشن</span>
+      <span className="hero-watermark" lang="ar" dir="rtl" aria-hidden="true">فيصل باعشن</span>
 
       <div className="hero-inner">
         {/* Left: Text content */}

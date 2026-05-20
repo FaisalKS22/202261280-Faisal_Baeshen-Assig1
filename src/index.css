@@ -5,19 +5,62 @@
    Assignment 2 – Interactive Features
    ========================================================== */
 
-/* ---------- Custom Arabic Font ---------- */
+/* ---------- Custom Arabic Font (Thmanyah Sans) ---------- */
 @font-face {
-  font-family: "Saudi";
-  src: url("/fonts/Saudi for download page/Saudi/Web fonts/WOFF-2-TT/Saudi Web/SaudiWeb-Regular.woff2") format("woff2");
+  font-family: "Thmanyah";
+  src: url("/fonts/Thmanyah/thmanyahsans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Thmanyah";
+  src: url("/fonts/Thmanyah/thmanyahsans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Thmanyah";
+  src: url("/fonts/Thmanyah/thmanyahsans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Thmanyah";
+  src: url("/fonts/Thmanyah/thmanyahsans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Thmanyah";
+  src: url("/fonts/Thmanyah/thmanyahsans-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Legacy alias so any existing "Saudi" references fall back to Thmanyah */
+@font-face {
+  font-family: "Saudi";
+  src: url("/fonts/Thmanyah/thmanyahsans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Saudi";
-  src: url("/fonts/Saudi for download page/Saudi/Web fonts/WOFF-2-TT/Saudi Web/SaudiWeb-Bold.woff2") format("woff2");
+  src: url("/fonts/Thmanyah/thmanyahsans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 /* ---------- CSS Custom Properties (Dark Theme – Default) ---------- */
@@ -379,7 +422,13 @@ ul {
   white-space: nowrap;
   z-index: 0;
   user-select: none;
-  font-family: "Saudi", sans-serif;
+  font-family: "Thmanyah", "Saudi", sans-serif;
+}
+
+/* Apply Thmanyah to any Arabic-tagged element */
+:lang(ar),
+[dir="rtl"] {
+  font-family: "Thmanyah", "Inter", system-ui, -apple-system, sans-serif;
 }
 
 /* Inner two-column layout */
